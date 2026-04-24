@@ -2,7 +2,9 @@
   "rewrites": [
     { "source": "/api/(.*)", "destination": "/api/$1" },
     { "source": "/ecouteurs-sans-fil", "destination": "/ecouteurs-sans-fil.html" },
-    { "source": "/robot-aspirateur", "destination": "/robot-aspirateur.html" }
+    { "source": "/robot-aspirateur", "destination": "/robot-aspirateur.html" },
+    { "source": "/cafetiere-grain", "destination": "/cafetiere-grain.html" },
+    { "source": "/montre-connectee", "destination": "/montre-connectee.html" }
   ],
   "headers": [
     { "source": "/sitemap.xml", "headers": [{ "key": "Content-Type", "value": "application/xml" }] }
