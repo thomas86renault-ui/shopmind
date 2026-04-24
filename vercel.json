@@ -1,13 +1,10 @@
 {
   "rewrites": [
-    { "source": "/api/(.*)", "destination": "/api/$1" }
+    { "source": "/api/(.*)", "destination": "/api/$1" },
+    { "source": "/ecouteurs-sans-fil", "destination": "/ecouteurs-sans-fil.html" },
+    { "source": "/robot-aspirateur", "destination": "/robot-aspirateur.html" }
   ],
   "headers": [
-    {
-      "source": "/sitemap.xml",
-      "headers": [
-        { "key": "Content-Type", "value": "application/xml" }
-      ]
-    }
+    { "source": "/sitemap.xml", "headers": [{ "key": "Content-Type", "value": "application/xml" }] }
   ]
 }
