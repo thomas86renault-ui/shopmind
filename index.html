@@ -448,7 +448,28 @@
       color: var(--text);
     }
 
-    /* Footer */
+    /* Nav categories */
+    .nav-cats {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      padding: 16px 0;
+      border-top: 1px solid var(--border);
+      margin-top: 12px;
+    }
+    .nav-cat {
+      font-size: 0.78rem;
+      font-weight: 500;
+      color: var(--muted);
+      border: 1px solid var(--border);
+      padding: 7px 16px;
+      border-radius: 100px;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    .nav-cat:hover { color: #0a0a0a; background: var(--accent); border-color: var(--accent); }
+
+        /* Footer */
     footer {
       border-top: 1px solid var(--border);
       padding: 28px 0;
@@ -484,9 +505,16 @@
 <div class="wrapper">
 
   <header>
-    <div class="logo">Shop<span>Mind</span></div>
+    <a href="/" class="logo" style="text-decoration:none">Shop<span>Mind</span></a>
     <div class="badge">Powered by IA</div>
   </header>
+
+  <nav class="nav-cats">
+    <a href="/ecouteurs-sans-fil" class="nav-cat">🎧 Écouteurs</a>
+    <a href="/robot-aspirateur" class="nav-cat">🤖 Robots aspirateurs</a>
+    <a href="/cafetiere-grain" class="nav-cat">☕ Cafetières à grain</a>
+    <a href="/montre-connectee" class="nav-cat">⌚ Montres connectées</a>
+  </nav>
 
   <section class="hero">
     <p class="eyebrow">Personal Shopper Intelligent</p>
